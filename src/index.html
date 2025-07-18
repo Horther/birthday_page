@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-    
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">Faltam exatamente <br> <span id="counter"></span><br>  para o meu aniversário</p>
+
+            <div class="hero__ticket">
+                <div class="hero__ticket__container" data-aos="fade-up">
+                    <h1>Ticket</h1>
+                    <ul class="hero__ticket__container__list">
+                        <li class="hero__ticket__container__list__item">
+                            <p>Local:</p>
+                        </li>
+                        <li class="hero__ticket__container__list__item">
+                            <p>Hora:</p>
+                        </li>
+                        <li class="hero__ticket__container__list__item">
+                            <p>ps: TRAZER PRESENTES</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

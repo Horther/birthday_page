@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+
+    .container {
+        position: relative;
+
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+    }
+
+    &__ticket {
+        margin-top: 160px;
+        display: flex;
+        justify-content: center;
+        
+        &__container {
+            background-image: url(../images/ticket.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 50%;
+            height: auto;
+
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+                margin-left: -17%;
+                margin-top: 30px;
+                margin-bottom: 32px;
+                padding-bottom: 40px;
+            }
+
+            &__list {
+                margin-left: calc(50% - 25%);
+
+                &__item{
+                    margin-bottom: 8px;
+                    font-weight: bold;
+
+                }
+            }
+        }
+        
+
+    }
+
+    @media (max-width: 640px) {
+        
+        &__text {
+            font-size: 30px;
+            
+        }
+
+
+        &__ticket {
+
+
+            &__container {
+                width: 100%;
+                background-size: cover;
+                h1{
+                    margin-left: -28%;
+                    margin-top: 20px;
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    padding-bottom: 12px;
+                }
+
+                &__list{
+                    margin-left: 5%;
+                    &__item {
+                        margin-left: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
